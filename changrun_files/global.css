@@ -1,0 +1,64 @@
+/*****************************************************************-/
+
+初始化及公用CSS
+
+/-*****************************************************************/
+
+* {margin:0; padding:0;}
+img {border:0px;}
+ul li {list-style:none;}
+a{text-decoration:none;color:#000;font-family:微软雅黑,"Microsoft YaHei",Arial;}
+a:hover{text-decoration:none;}
+div:after {content: '.'; display: block; height: 0; clear: both; visibility: hidden;font-size:0}
+body{font-family:微软雅黑,"Microsoft YaHei",Arial;font-size:14spx;}
+p{font-size:14px;line-height:20px;}
+.c{clear:both;}
+h1,h2,h3,h4,h5,h6{ font-family:微软雅黑,"Microsoft YaHei",Arial;}
+input,button,select,textarea{outline:none;}
+
+
+/*布局*/
+.box {width:100%;margin-bottom:10px;}
+.no-mb {margin-bottom:0;}
+.col-main {float: left;width:100%;min-height: 1px; display:inline; overflow:hidden;}
+.col-sub, .col-extra {float: left;}
+.layout:after, .main-wrap:after, .col-sub:after, .col-extra:after { content: '\20'; display: block; height: 0; clear: both; }
+.layout, .main-wrap, .col-sub, .col-extra {*zoom: 1; }
+
+.grid-s5m0 .main-wrap { margin-left: 220px; } .grid-s5m0 .col-sub { width: 212px; margin-left: -100%; }
+.grid-m0s5 .main-wrap { margin-right: 200px;} .grid-m0s5 .col-sub { width: 185px; margin-left: -185px;}
+
+/* 748&230 */
+.grid-s55m0 .main-wrap {margin-left: 240px; } .grid-s55m0 .col-sub { width: 230px; margin-left: -100%; }
+.grid-m0s55 .main-wrap {margin-right: 240px;} .grid-m0s55 .col-sub { width: 230px; margin-left: -230px;}
+
+
+.grid-s4m0 .main-wrap {margin-left: 160px; } .grid-s4m0 .col-sub { width: 150px; margin-left: -100%; }
+.grid-s6m0 .main-wrap {margin-left: 220px; } .grid-s6m0 .col-sub { width: 220px; margin-left: -100%; }
+.grid-m0s6 .main-wrap {margin-right: 200px; } .grid-m0s6 .col-sub { width: 230px; margin-left: -230px; }
+.grid-m0s8 .main-wrap {margin-right: 340px; } .grid-m0s8 .col-sub { width: 320px; margin-left: -320px; }
+
+/*自定义 布局 start*/
+.grid-m0s475 .main-wrap {margin-right: 206px;} .grid-m0s475 .col-sub { width: 196px; margin-left: -196px;}
+.grid-s675m0 .main-wrap {margin-left: 260px; } .grid-s675m0 .col-sub { width: 260px; margin-left: -100%; }
+.grid-s65m0e75 .main-wrap {margin: 0 305px 0 275px; } .grid-s65m0e75 .col-sub { width:260px; margin-left: -100%; } .grid-s65m0e75 .col-extra {width: 290px; margin-left: -290px; }
+/*自定义 布局 end*/
+
+.grid-s5m0e6 .main-wrap {margin: 0 240px 0 200px; } .grid-s5m0e6 .col-sub { width: 190px; margin-left: -100%; } .grid-s5m0e6 .col-extra { width: 230px; margin-left: -230px; }
+.grid-e6m0s5 .main-wrap {margin: 0 200px 0 240px; } .grid-e6m0s5 .col-sub { width: 190px; margin-left: -190px; } .grid-e6m0s5 .col-extra { width: 230px; margin-left: -100%; }
+.grid-m0e6s5 .main-wrap {margin-right: 440px; } .grid-m0e6s5 .col-sub { width: 190px; margin-left: -190px; } .grid-m0e6s5 .col-extra { width: 230px; margin-left: -430px; }
+.grid-s5m0e5 .main-wrap {margin: 0 208px 0 208px; } .grid-s5m0e5 .col-sub { width: 198px; margin-left: -980px; } .grid-s5m0e5 .col-extra { width: 198px; margin-left: -198px; }
+
+#hd,#ft{width:980px;margin:0 auto;overflow:hidden;}
+#content{width:100%;min-width:980px;_width:expression((documentElement.clientWidth < 980) ? "980px" : "100%" );margin:0 auto;}
+/*#content{width:100%;min-width:1004px;_width:expression((documentElement.clientWidth < 1008) ? "1008px" : "100%" );}*/
+#bd{width:980px;margin:0 auto;}
+
+.htmleditor{clear:both;line-height:1.8;font-size:14px;text-align:justify;}
+.htmleditor p {display:block;margin-bottom:10px;font-size:14px;}
+
+/* 通用样式 */
+.f14{font-size:14px;}
+.fbd{font-weight:bold;}
+
+.htmleditor {color:#414043;}
